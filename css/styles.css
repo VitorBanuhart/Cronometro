@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kode Mono", monospace;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    background-color: #0c9308;
+
+}
+
+.container-title {
+    margin: 5rem 5rem;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* cronometro */
+#stopwatch {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    margin: -4rem auto;
+    background-color: #008000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#stopwatch-play {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    margin: -4rem auto;
+    background-color: #2ecb1e;
+    color: #ffff;
+    transition: 0.5s;
+}
+
+.min-stopwatch {
+    margin-top: 4rem;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.sec-stopwatch {
+    margin-top: 4rem;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.mil-stopwatch {
+    margin-top: 4rem;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.colon-stopwatch {
+    margin-top: 4rem;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+/* botões */
+#buttons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.btn {
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #aad09e;
+}
+
+#start-stopwatch {
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    background-color: #2ecb1e;
+    border: none;
+    border-bottom: 2px solid #008000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#reset-stopwatch {
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #008000;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+
+#pause-stopwatch {
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #008000;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+
+#resume-stopwatch {
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #008000;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .container-title {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5em;
+    }
+
+    #stopwatch {
+        display: flex;
+        align-items: center;
+    }
+
+    .min-stopwatch,
+    .sec-stopwatch {
+        margin-top: -2em;
+    }
+
+    .colon-stopwatch {
+        margin-top: -2.4em;
+    }
+
+    .mil-stopwatch {
+        margin-top: -2.9em;
+    }
+}
