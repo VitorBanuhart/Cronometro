@@ -33,7 +33,6 @@ reset_btn.addEventListener("click", resetTime);
                     seconds++;
                     miliseconds = 0;
                 }
-
                 if(seconds === 60){
                     minutes++;
                     seconds = 0;
